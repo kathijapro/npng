@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            right: 0;
+           
+            padding: 20px;
+            z-index: 1000;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: #007bff;
+        }
+        .hero-section, .banner, .services-section {
+            padding-top: 80px;
+        }
+        .hero-section {
+            display: flex;
+            align-items: center;
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+        .hero-content {
+            flex: 1;
+            max-width: 50%;
+        }
+        .hero-content p {
+            margin-bottom: 20px;
+        }
+        .hero-button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .hero-image {
+            flex: 1;
+            max-width: 50%;
+        }
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            max-height: 500px;
+        }
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 539px;
+            background-color: #cd82f0;
+            display: flex;
+            align-items: center;
+            padding: 50px;
+        }
+        .banner img {
+            max-width: 50%;
+            height: auto;
+        }
+        .banner-content {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .banner-content h2 {
+            margin-bottom: 20px;
+            color: #f1f1f1;
+        }
+        .learn-more {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .services-section {
+            text-align: center;
+            padding: 50px;
+        }
+        .services-section h2 {
+            margin-bottom: 20px;
+            color: #f0a34c;
+        }
+        .services-boxes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service-box {
+            width: 386px;
+            height: 316px;
+            background-color: #f7f5f5;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .service-box i {
+            margin-bottom: 15px;
+        }
+        .service-box img {
+            margin-bottom: 15px;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="Logo" height="50">
+        <span>NPNG Tech</span>
+    </div>
+    
+    <!-- Navigation -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1> <p style="font-size:50px;"></p>Shaping Ideas into Digital Excellence</p></h1>
+            <p>Transforming Ideas into Digital Reality with Creative Solutions</p>
+            <p>We provide creative solutions to turn your ideas into digital reality.</p>
+            <a href="#get-started" class="hero-button">Get Started</a>
+        </div>
+        <div class="hero-image">
+            <img src="side.png" alt="Hero Image">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="banner">
+        <img src="side2.png" alt="About Image">
+        <div class="banner-content">
+            <h2>About Us</h2>
+            <p>Get Started Easily With NPNG</p>
+            <p>At NPNG, we're more than just a web design and development company - we're pioneers of exceptional digital experiences. With a steadfast commitment to quality and service, we've assembled a dedicated team of experts who consistently exceed expectations and deliver outstanding results.</p>
+            <p>Innovation and Collaborations</p>
+            <p>Tailored Strategies</p>
+            <p>Transparency and Communication</p>
+            <p>Community Engagement and Sustainability</p>
+            <a href="#learn-more" class="learn-more">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Popular Services</h2>
+        <p>Services to your business growth</p>
+        <p>Discover how our personalized solutions can help your business thrive. From strategic planning to execution, make your journey to success smoother and more rewarding.</p>
+        <div class="services-boxes">
+            <div class="service-box">
+                <i class="fas fa-mobile-alt" style="font-size:48px;color:red"></i>
+                <p>Mobile App Development</p>
+                <p>Elevate your business with our custom mobile applications, engineered for intuitive user experiences, seamless functionality, and lasting impact on the go.</p>
+            </div>
+            <div class="service-box">
+                <img src="aws.png" alt="Web Icon" width="32" height="32">
+                <p>Web App Development</p>
+                <p>Transforming your ideas into powerful web applications with custom development, responsive design, and reliable support, we drive your digital success at NPNG TECH</p>
+            </div>
+            <div class="service-box">
+                <i class="far fa-building" style="font-size:48px;color:red"></i>
+                <p>UI/UX Designs</p>
+                <p>From sleek and intuitive UI/UX designs to seamless user experiences, we elevate your web applications to captivate and engage users, ensuring optimal digital interaction.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
